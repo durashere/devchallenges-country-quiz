@@ -1,26 +1,17 @@
-import Head from "next/head"
+import Layout from "../components/Layout/Layout"
+import Button from "../components/Button/Button"
 
 export default function Home() {
   return (
-    <div className="">
-      <Head>
-        <title>Starter Next Tailwind</title>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Icons"
-          rel="stylesheet"
-        />
-      </Head>
-
-      <main className="">
-        <p>Main</p>
-      </main>
-
-      <footer className="">
-        <p className="pb-4 font-mont text-gray-300 text-sm font-semibold">
-          <a href="https://github.com/{your_nickname}">your_nickname</a> @{" "}
-          <a href="https://devchallenges.io">DevChallenges.io</a>
-        </p>
-      </footer>
-    </div>
+    <Layout>
+      <div>
+        <h1 className="font-pop font-bold text-4xl text-gray-cF2F2F2">
+          COUNTRY QUIZ
+        </h1>
+        <div className="w-80 h-40">
+          <Button letter="A">Poland</Button>
+        </div>
+      </div>
+    </Layout>
   )
 }

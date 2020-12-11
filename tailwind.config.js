@@ -36,8 +36,18 @@ module.exports = {
         c2D9CDB: "#2D9CDB",
         c100E1D: "#100E1D",
       },
+      purple: {
+        c6066D0: "#6066D0",
+      },
+      orange: {
+        cF9A826: "#F9A826",
+      },
     },
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        background: "url('/background.png')",
+      }),
+    },
   },
   variants: {
     extend: {},
