@@ -28,13 +28,16 @@ module.exports = {
       },
       red: {
         cEB5757: "#EB5757",
+        cEA8282: "#EA8282",
       },
       green: {
         c27AE60: "#27AE60",
+        c60BF88: "#60BF88",
       },
       blue: {
         c2D9CDB: "#2D9CDB",
         c100E1D: "#100E1D",
+        c2F527B: "#2F527B",
       },
       purple: {
         c6066D0: "#6066D0",

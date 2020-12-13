@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
         />
       </Head>
 
-      <main className="h-full flex items-center justify-center">
+      <main className="w-1/3 h-full mx-auto flex items-center justify-center">
         {children}
       </main>
 
