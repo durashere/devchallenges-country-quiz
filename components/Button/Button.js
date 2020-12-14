@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 const Button = ({ letter, children, status, ...props }) => {
   const [hover, setHover] = useState(false)
-  console.log(children, hover)
+  // console.log(children, hover)
 
   const chooseStatus = {
     correct: `border border-green-c60BF88 text-white bg-green-c60BF88`,
