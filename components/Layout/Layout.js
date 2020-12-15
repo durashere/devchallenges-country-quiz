@@ -6,9 +6,9 @@ const Layout = ({ children }) => {
       <Head>
         <title>Country Quiz</title>
         <link
-          href="https://fonts.googleapis.com/css2?family=Material+Icons"
+          href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
           rel="stylesheet"
-        />
+        ></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;500;600;700&display=swap"

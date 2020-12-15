@@ -7,13 +7,17 @@ const chooseRandom = (array) => {
 }
 
 export default function Home({ choosedCountries, correctCountry }) {
-  const [selectedCountry, setSelectedCountry] = useState()
+  const [answered, setAnswered] = useState(false)
+  const [selectedAnswer, setSelectedAnswer] = useState(undefined)
 
-  const checkAnswer = (country, index) => {
-    setSelectedCountry(country)
-
-    console.log(index + 1)
+  const handleAnswerClick = (answer, index) => {
+    setAnswered(true)
+    setSelectedAnswer(answer)
   }
+
+  console.log("answered", answered)
+  console.log("selectedAnswer", selectedAnswer)
+  console.log("---------------")
 
   return (
     <Layout>
@@ -25,14 +29,9 @@ export default function Home({ choosedCountries, correctCountry }) {
       {/* Answers */}
       {choosedCountries.map((country, index) => (
         <Button
-          status={
-            selectedCountry &&
-            (country.capital === correctCountry.capital
-              ? "correct"
-              : "incorrect")
-          }
+          gameData={{ answered, correctCountry, selectedAnswer }}
           key={country.name}
-          onClick={() => checkAnswer(country, index)}
+          onClick={() => handleAnswerClick(country, index)}
           letter={(index + 10).toString(36).toUpperCase()}
         >
           {country.capital}
