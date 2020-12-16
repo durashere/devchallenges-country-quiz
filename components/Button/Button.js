@@ -14,9 +14,9 @@ const Button = ({ letter, children, gameData, ...props }) => {
   }
 
   if (answered) {
-    if (children === correctCountry.capital) {
+    if (children === correctCountry.name) {
       status = "correct"
-    } else if (children === selectedAnswer.capital) {
+    } else if (children === selectedAnswer.name) {
       status = "incorrect"
     }
   }

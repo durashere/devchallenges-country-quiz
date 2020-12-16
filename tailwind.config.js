@@ -38,6 +38,7 @@ module.exports = {
         c2D9CDB: "#2D9CDB",
         c100E1D: "#100E1D",
         c2F527B: "#2F527B",
+        c1D355D: "#1D355D",
       },
       purple: {
         c6066D0: "#6066D0",
